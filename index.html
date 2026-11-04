@@ -1,277 +1,235 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Danh sách sản phẩm tã em bé tại Con Cưng.">
-    <title>Danh sách sản phẩm bỉm, tã | Con Cưng</title>
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Danh sách sản phẩm tã em bé tại Con Cưng.">
+  <title>Danh sách sản phẩm bỉm, tã | Con Cưng</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- HEADER -->
-    <header class="site-header">
-        <div class="header-container">
-            <a href="https://concung.com/" class="logo" aria-label="Con Cưng - Trang chủ">
-                Con Cưng<span>.</span>
-            </a>
+  <!-- Liên kết bỏ qua menu: hỗ trợ người dùng bàn phím (focus-visible) -->
+  <a class="skip-link" href="#main-content">Bỏ qua và đến nội dung chính</a>
 
-            <form class="search-box" role="search" action="https://concung.com/" method="get">
-                <input
-                    type="search"
-                    name="q"
-                    placeholder="Tìm kiếm sản phẩm mẹ và bé..."
-                    aria-label="Tìm kiếm sản phẩm"
-                >
-                <button type="submit" aria-label="Tìm kiếm">
-                    Tìm kiếm
-                </button>
-            </form>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="https://concung.com/" class="logo" aria-label="Con Cưng - Trang chủ">
+        Con Cưng<span>.</span>
+      </a>
 
-            <a href="https://concung.com/" class="header-link">
-                Website Con Cưng
-            </a>
-        </div>
-    </header>
+      <form class="search-box" role="search" action="https://concung.com/" method="get">
+        <input
+          type="search"
+          name="q"
+          placeholder="Tìm kiếm sản phẩm mẹ và bé..."
+          aria-label="Tìm kiếm sản phẩm"
+        >
+        <button type="submit" aria-label="Tìm kiếm">Tìm kiếm</button>
+      </form>
 
-    <!-- NAVIGATION -->
-    <nav class="main-nav" aria-label="Menu chính">
-        <ul class="nav-container">
-            <li><a href="https://concung.com/">Trang chủ</a></li>
-            <li><a href="https://concung.com/">Mẹ và bé</a></li>
-            <li><a href="https://concung.com/">Sữa và dinh dưỡng</a></li>
-            <li><a href="https://concung.com/">Bỉm, tã</a></li>
-            <li><a href="https://concung.com/">Chăm sóc bé</a></li>
-        </ul>
-    </nav>
+      <a href="https://concung.com/" class="header-link">Website Con Cưng</a>
+    </div>
+  </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="page-container">
+  <!-- NAVIGATION -->
+  <nav class="main-nav" aria-label="Menu chính">
+    <ul class="nav-container">
+      <li><a href="https://concung.com/">Trang chủ</a></li>
+      <li><a href="https://concung.com/">Mẹ và bé</a></li>
+      <li><a href="https://concung.com/">Sữa và dinh dưỡng</a></li>
+      <li><a href="https://concung.com/">Bỉm, tã</a></li>
+      <li><a href="https://concung.com/">Chăm sóc bé</a></li>
+    </ul>
+  </nav>
 
-        <!-- BREADCRUMB -->
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-    <ol>
+  <!-- MAIN CONTENT -->
+  <main id="main-content" class="page-container">
+
+    <!-- BREADCRUMB -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol>
         <li><a href="https://concung.com/">Trang chủ</a></li>
         <li aria-current="page">Bỉm, tã</li>
-    </ol>
-</nav>
+      </ol>
+    </nav>
 
-        <!-- PAGE INTRODUCTION -->
-        <section class="page-intro">
-            <div>
-                <p class="section-label">CON CƯNG - SẢN PHẨM CHO BÉ</p>
-                <h1>Danh sách sản phẩm bỉm, tã</h1>
-                <p class="intro-description">
-                    Khám phá các sản phẩm tã em bé với nhiều lựa chọn
-                    phù hợp cho nhu cầu chăm sóc bé mỗi ngày.
-                </p>
-            </div>
-        </section>
+    <!-- PAGE INTRODUCTION -->
+    <section class="page-intro">
+      <div>
+        <p class="section-label">CON CƯNG - SẢN PHẨM CHO BÉ</p>
+        <h1>Danh sách sản phẩm bỉm, tã</h1>
+        <p class="intro-description">
+          Khám phá các sản phẩm tã em bé với nhiều lựa chọn
+          phù hợp cho nhu cầu chăm sóc bé mỗi ngày.
+        </p>
+      </div>
+    </section>
 
-        <!-- PRODUCT SECTION -->
-        <section class="product-section">
-
-            <div class="section-heading">
-                <div>
-                    <h2>Sản phẩm nổi bật</h2>
-                    <p class="product-count">Hiển thị 4 sản phẩm</p>
-                </div>
-
-                <div class="sort-box">
-                    <label for="sort-products">Sắp xếp:</label>
-                    <select id="sort-products" name="sort">
-                        <option value="featured">Nổi bật</option>
-                        <option value="price-low">Giá thấp đến cao</option>
-                        <option value="price-high">Giá cao đến thấp</option>
-                    </select>
-                </div>
-            </div>
-
-            <!-- FILTER -->
-            <div class="filter-list" role="group" aria-label="Danh mục sản phẩm">
-                <button type="button" class="filter-item active" aria-pressed="true">Tất cả</button>
-                <button type="button" class="filter-item" aria-pressed="false">Tã quần</button>
-                <button type="button" class="filter-item" aria-pressed="false">Animo</button>
-                <button type="button" class="filter-item" aria-pressed="false">Takato</button>
-            </div>
-
-            <!-- PRODUCT GRID -->
-            <div class="product-grid">
-
-                <!-- PRODUCT 1 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-tag">Nổi bật</span>
-                        <img
-                            src="images/product-1.jpg"
-                            alt="Tã quần Animo Siêu Mềm Thoáng XXL 50 miếng"
-                        >
-                    </div>
-
-                    <div class="product-info">
-                        <p class="product-brand">ANIMO</p>
-                        <h3>
-                            Tã Quần Animo Siêu Mềm Thoáng
-                            (XXL, 50 miếng)
-                        </h3>
-
-                        <p class="product-description">
-                            Tã quần dành cho bé, quy cách 50 miếng.
-                        </p>
-
-                        <div class="product-price">
-                            <span class="current-price">219.000đ</span>
-                        </div>
-
-                        <a
-                            href="https://concung.com/"
-                            class="product-button"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Tham khảo sản phẩm
-                        </a>
-                    </div>
-                </article>
-
-                <!-- PRODUCT 2 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <span class="product-tag">Gợi ý</span>
-                        <img
-                            src="images/product-2.jpg"
-                            alt="Tã quần Takato siêu mềm mại XL 62 miếng"
-                        >
-                    </div>
-
-                    <div class="product-info">
-                        <p class="product-brand">TAKATO</p>
-                        <h3>
-                            Tã quần Takato siêu mềm mại
-                            (XL, 62 miếng)
-                        </h3>
-
-                        <p class="product-description">
-                            Tã quần dành cho bé, quy cách 62 miếng.
-                        </p>
-
-                        <div class="product-price">
-                            <span class="current-price">339.000đ</span>
-                        </div>
-
-                        <a
-                            href="https://concung.com/"
-                            class="product-button"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Tham khảo sản phẩm
-                        </a>
-                    </div>
-                </article>
-
-                <!-- PRODUCT 3 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <img
-                            src="images/product-3.jpg"
-                            alt="Tã quần Takato siêu mềm mại XXL 56 miếng"
-                        >
-                    </div>
-
-                    <div class="product-info">
-                        <p class="product-brand">TAKATO</p>
-                        <h3>
-                            Tã quần Takato siêu mềm mại
-                            (XXL, 56 miếng)
-                        </h3>
-
-                        <p class="product-description">
-                            Tã quần dành cho bé, quy cách 56 miếng.
-                        </p>
-
-                        <div class="product-price">
-                            <span class="current-price">339.000đ</span>
-                        </div>
-
-                        <a
-                            href="https://concung.com/"
-                            class="product-button"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Tham khảo sản phẩm
-                        </a>
-                    </div>
-                </article>
-
-                <!-- PRODUCT 4 -->
-                <article class="product-card">
-                    <div class="product-image">
-                        <img
-                            src="images/product-4.jpg"
-                            alt="Tã quần Animo Siêu Mềm Thoáng XL 50 miếng"
-                        >
-                    </div>
-
-                    <div class="product-info">
-                        <p class="product-brand">ANIMO</p>
-                        <h3>
-                            Tã Quần Animo Siêu Mềm Thoáng
-                            (XL, 50 miếng)
-                        </h3>
-
-                        <p class="product-description">
-                            Tã quần dành cho bé, quy cách 50 miếng.
-                        </p>
-
-                        <div class="product-price">
-                            <span class="current-price">219.000đ</span>
-                        </div>
-
-                        <a
-                            href="https://concung.com/"
-                            class="product-button"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            Tham khảo sản phẩm
-                        </a>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-        <!-- INFORMATION -->
-        <section class="information-section">
-            <h2>Con Cưng - Đồng hành cùng mẹ chăm sóc bé</h2>
-            <p>
-                Khám phá thêm các sản phẩm dành cho mẹ và bé tại website
-                chính thức của Con Cưng.
-            </p>
-            <a href="https://concung.com/" target="_blank" rel="noopener noreferrer">
-                Truy cập Con Cưng
-            </a>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="site-footer">
-        <div class="footer-container">
-            <p class="footer-logo">Con Cưng<span>.</span></p>
-            <p>Giao diện thực hành HTML5 và CSS3 - Học phần Phát triển ứng dụng.</p>
-            <p class="footer-note">
-                Website tham khảo:
-                <a href="https://concung.com/" target="_blank" rel="noopener noreferrer">
-                    concung.com
-                </a>
-            </p>
+    <!-- PRODUCT SECTION -->
+    <section class="product-section" aria-labelledby="featured-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="featured-title">Sản phẩm nổi bật</h2>
+          <p class="product-count">Hiển thị 4 sản phẩm</p>
         </div>
-    </footer>
+
+        <div class="sort-box">
+          <label for="sort-products">Sắp xếp:</label>
+          <select id="sort-products" name="sort">
+            <option value="featured">Nổi bật</option>
+            <option value="price-low">Giá thấp đến cao</option>
+            <option value="price-high">Giá cao đến thấp</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- FILTER (mới chỉ là giao diện, chức năng lọc sẽ làm bằng JavaScript ở Buổi 3) -->
+      <div class="filter-list" role="group" aria-label="Danh mục sản phẩm">
+        <button type="button" class="filter-item active" aria-pressed="true">Tất cả</button>
+        <button type="button" class="filter-item" aria-pressed="false">Tã quần</button>
+        <button type="button" class="filter-item" aria-pressed="false">Animo</button>
+        <button type="button" class="filter-item" aria-pressed="false">Takato</button>
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <div class="product-grid">
+
+        <!-- PRODUCT 1 -->
+        <article class="product-card" data-brand="animo" data-price="219000">
+          <div class="product-image">
+            <span class="product-tag">Nổi bật</span>
+            <img
+              src="images/product-1.jpg"
+              alt="Tã quần Animo Siêu Mềm Thoáng XXL 50 miếng"
+              width="400" height="400"
+            >
+          </div>
+          <div class="product-info">
+            <p class="product-brand">ANIMO</p>
+            <h3 class="product-title">Tã Quần Animo Siêu Mềm Thoáng (XXL, 50 miếng)</h3>
+            <p class="product-description">Tã quần dành cho bé, quy cách 50 miếng.</p>
+            <p class="product-price"><span class="current-price">219.000đ</span></p>
+
+            <div class="product-actions">
+              <a class="product-button" href="https://concung.com/" target="_blank" rel="noopener noreferrer">
+                Tham khảo sản phẩm
+              </a>
+              <button type="button" class="btn-favorite" aria-label="Yêu thích Tã quần Animo XXL 50 miếng">
+                Yêu thích
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT 2 -->
+        <article class="product-card" data-brand="takato" data-price="339000">
+          <div class="product-image">
+            <span class="product-tag">Gợi ý</span>
+            <img
+              src="images/product-2.jpg"
+              alt="Tã quần Takato siêu mềm mại XL 62 miếng"
+              width="400" height="400" loading="lazy"
+            >
+          </div>
+          <div class="product-info">
+            <p class="product-brand">TAKATO</p>
+            <h3 class="product-title">Tã quần Takato siêu mềm mại (XL, 62 miếng)</h3>
+            <p class="product-description">Tã quần dành cho bé, quy cách 62 miếng.</p>
+            <p class="product-price"><span class="current-price">339.000đ</span></p>
+
+            <div class="product-actions">
+              <a class="product-button" href="https://concung.com/" target="_blank" rel="noopener noreferrer">
+                Tham khảo sản phẩm
+              </a>
+              <button type="button" class="btn-favorite" aria-label="Yêu thích Tã quần Takato XL 62 miếng">
+                Yêu thích
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT 3 -->
+        <article class="product-card" data-brand="takato" data-price="339000">
+          <div class="product-image">
+            <img
+              src="images/product-3.jpg"
+              alt="Tã quần Takato siêu mềm mại XXL 56 miếng"
+              width="400" height="400" loading="lazy"
+            >
+          </div>
+          <div class="product-info">
+            <p class="product-brand">TAKATO</p>
+            <h3 class="product-title">Tã quần Takato siêu mềm mại (XXL, 56 miếng)</h3>
+            <p class="product-description">Tã quần dành cho bé, quy cách 56 miếng.</p>
+            <p class="product-price"><span class="current-price">339.000đ</span></p>
+
+            <div class="product-actions">
+              <a class="product-button" href="https://concung.com/" target="_blank" rel="noopener noreferrer">
+                Tham khảo sản phẩm
+              </a>
+              <button type="button" class="btn-favorite" aria-label="Yêu thích Tã quần Takato XXL 56 miếng">
+                Yêu thích
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRODUCT 4 -->
+        <article class="product-card" data-brand="animo" data-price="219000">
+          <div class="product-image">
+            <img
+              src="images/product-4.jpg"
+              alt="Tã quần Animo Siêu Mềm Thoáng XL 50 miếng"
+              width="400" height="400" loading="lazy"
+            >
+          </div>
+          <div class="product-info">
+            <p class="product-brand">ANIMO</p>
+            <h3 class="product-title">Tã Quần Animo Siêu Mềm Thoáng (XL, 50 miếng)</h3>
+            <p class="product-description">Tã quần dành cho bé, quy cách 50 miếng.</p>
+            <p class="product-price"><span class="current-price">219.000đ</span></p>
+
+            <div class="product-actions">
+              <a class="product-button" href="https://concung.com/" target="_blank" rel="noopener noreferrer">
+                Tham khảo sản phẩm
+              </a>
+              <button type="button" class="btn-favorite" aria-label="Yêu thích Tã quần Animo XL 50 miếng">
+                Yêu thích
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- INFORMATION -->
+    <section class="information-section">
+      <h2>Con Cưng - Đồng hành cùng mẹ chăm sóc bé</h2>
+      <p>
+        Khám phá thêm các sản phẩm dành cho mẹ và bé tại website
+        chính thức của Con Cưng.
+      </p>
+      <a class="info-link" href="https://concung.com/" target="_blank" rel="noopener noreferrer">
+        Truy cập Con Cưng
+      </a>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <p class="footer-logo">Con Cưng<span>.</span></p>
+      <p>Giao diện thực hành HTML5 và CSS3 - Học phần Phát triển ứng dụng.</p>
+      <p class="footer-note">
+        Website tham khảo:
+        <a href="https://concung.com/" target="_blank" rel="noopener noreferrer">concung.com</a>
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>

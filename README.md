@@ -138,5 +138,4 @@ Chi tiết các prompt đã sử dụng, kết quả nhận được và phần 
 
 - **Tên dự án:** Con Cưng UI Improvement
 - **Học phần:** Phát triển ứng dụng WEB/TMĐT
-- **Nội dung:** Bài tập cá nhân Buổi 2 – HTML & CSS
 - **GitHub Repository:** https://github.com/Hagiang546/con-cung-ui-improvement
