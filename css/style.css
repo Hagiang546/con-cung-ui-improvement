@@ -706,3 +706,57 @@ select:focus-visible {
     }
 
 }
+
+/* ==============================
+   BUOC 4: CSS SELECTOR & BOX MODEL
+============================== */
+
+/* Element selector */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Class selector: dinh dang the san pham */
+.product-card {
+    margin: 12px;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* Descendant selector: hinh anh trong the san pham */
+.product-card img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Descendant selector: ten san pham */
+.product-card h2 {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+/* Class selector: gia san pham */
+.product-price {
+    margin-bottom: 12px;
+    color: #d62828;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Descendant selector: lien ket trong the san pham */
+.product-card a {
+    display: inline-block;
+    padding: 9px 14px;
+    border-radius: 6px;
+    background-color: #e53935;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}

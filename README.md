@@ -1,42 +1,81 @@
-# DỰ ÁN CẢI TIẾN GIAO DIỆN DANH SÁCH SẢN PHẨM CON CƯNG
+# Con Cưng UI Improvement 
 
 ## 1. Giới thiệu dự án
 
-Dự án được thực hiện trong khuôn khổ học phần **Phát triển ứng dụng**, với mục tiêu vận dụng kiến thức HTML5 và CSS3 để xây dựng, cải tiến giao diện danh sách sản phẩm trên website Con Cưng.
+**Con Cưng UI Improvement** là bài tập cá nhân thuộc học phần **Phát triển ứng dụng WEB/TMĐT**, Buổi 2: HTML & CSS.
 
-Phạm vi thực hiện tập trung vào khu vực hiển thị danh sách 4 sản phẩm. Giao diện được thiết kế theo hướng trực quan, dễ quan sát, có bố cục rõ ràng và khả năng thích ứng với nhiều kích thước màn hình.
+Dự án tiếp tục phát triển giao diện website từ bài tập Buổi 1, tập trung vào việc vận dụng HTML5 và CSS3 để cải thiện cấu trúc, cách trình bày và trải nghiệm quan sát sản phẩm trên giao diện.
 
-Đây là sản phẩm thực hành giao diện tĩnh, không bao gồm các chức năng xử lý dữ liệu từ máy chủ hoặc cơ sở dữ liệu.
+Website được xây dựng dưới dạng giao diện tĩnh bằng HTML và CSS, không sử dụng cơ sở dữ liệu hoặc chức năng xử lý giao dịch thực tế.
 
-## 2. Mục tiêu dự án
+## 2. Website tham khảo và khu vực cải tiến
 
-- Vận dụng các thẻ HTML5 để xây dựng cấu trúc trang web có ý nghĩa ngữ nghĩa.
-- Sử dụng CSS Selector để lựa chọn và định dạng các thành phần HTML.
-- Thực hành CSS Box Model thông qua các thuộc tính margin, padding và border.
-- Sử dụng Flexbox và CSS Grid để tổ chức bố cục giao diện.
-- Áp dụng hiệu ứng hover và focus để cải thiện trải nghiệm tương tác.
-- Xây dựng giao diện Responsive phù hợp với máy tính, máy tính bảng và điện thoại.
-- Rèn luyện kỹ năng kiểm tra, phát hiện và khắc phục lỗi giao diện.
+- **Website tham khảo:** [Con Cưng](https://concung.com/)
+- **Khu vực được lựa chọn:** Danh sách sản phẩm.
+- **Phạm vi cải tiến:** Khu vực hiển thị thông tin sản phẩm, bao gồm hình ảnh, tên sản phẩm, giá bán và liên kết tham khảo sản phẩm.
 
-## 3. Công nghệ sử dụng
+Giao diện được xây dựng dựa trên website Con Cưng, với mục tiêu giúp các sản phẩm được trình bày rõ ràng, có bố cục thống nhất và thuận tiện hơn khi quan sát.
 
-| Công nghệ | Mục đích |
-|---|---|
-| HTML5 | Xây dựng cấu trúc và nội dung trang web |
-| CSS3 | Thiết kế và định dạng giao diện |
-| Flexbox | Căn chỉnh và sắp xếp các thành phần |
-| CSS Grid | Xây dựng bố cục danh sách sản phẩm |
-| Responsive Design | Điều chỉnh giao diện theo kích thước màn hình |
-| Visual Studio Code | Soạn thảo và quản lý mã nguồn |
-| GitHub | Lưu trữ và quản lý dự án |
+## 3. Công nghệ và kỹ thuật sử dụng
 
-## 4. Cấu trúc thư mục
+### 3.1. HTML5
+
+Các phần tử HTML được sử dụng để tổ chức nội dung và phân chia cấu trúc giao diện:
+
+- `header`: Khu vực đầu trang.
+- `nav`: Khu vực chứa các liên kết điều hướng.
+- `main`: Nội dung chính của trang.
+- `section`: Phân chia các khu vực nội dung.
+- `article`: Đại diện cho từng thẻ sản phẩm.
+- `footer`: Khu vực chân trang.
+- `img`: Hiển thị hình ảnh sản phẩm, có sử dụng thuộc tính `alt`.
+- `a`: Tạo liên kết tham khảo sản phẩm.
+
+### 3.2. CSS3
+
+Các kỹ thuật CSS được vận dụng trong quá trình cải tiến giao diện:
+
+- **CSS Selector:** Sử dụng element selector, class selector và descendant selector để lựa chọn và định dạng các phần tử HTML.
+- **Box Model:** Điều chỉnh `margin`, `padding`, `border`, `border-radius` và `box-sizing` nhằm kiểm soát kích thước, khoảng cách và hình thức của thẻ sản phẩm.
+- **Flexbox:** Sử dụng để căn chỉnh các thành phần trong khu vực được lựa chọn.
+- **CSS Grid:** Tổ chức danh sách sản phẩm theo dạng lưới, kiểm soát số cột và khoảng cách giữa các sản phẩm.
+- **Hover và Transition:** Tạo hiệu ứng khi người dùng di chuyển con trỏ chuột đến thẻ sản phẩm hoặc các thành phần tương tác.
+- **Focus-visible:** Hỗ trợ nhận biết trạng thái của các phần tử có thể tương tác khi sử dụng bàn phím.
+- **Responsive Design:** Điều chỉnh bố cục để giao diện phù hợp với các kích thước màn hình khác nhau.
+
+## 4. Những thay đổi đã thực hiện
+
+So với giao diện ban đầu, dự án tập trung cải thiện các nội dung sau:
+
+1. Tổ chức lại cấu trúc HTML theo các phần tử HTML5 có ngữ nghĩa.
+2. Tách phần định dạng giao diện thành tệp CSS riêng và liên kết với trang HTML.
+3. Cải thiện cách trình bày thẻ sản phẩm thông qua màu sắc, font chữ, khoảng cách, đường viền và góc bo.
+4. Điều chỉnh bố cục danh sách sản phẩm bằng CSS Grid.
+5. Sử dụng Flexbox để căn chỉnh các thành phần trong khu vực được lựa chọn.
+6. Bổ sung hiệu ứng hover, transition và trạng thái focus-visible.
+7. Điều chỉnh giao diện để phù hợp với nhiều kích thước màn hình.
+
+## 5. Hướng dẫn chạy website
+
+### Yêu cầu
+
+- Visual Studio Code hoặc trình soạn thảo mã nguồn tương đương.
+- Trình duyệt web như Google Chrome, Microsoft Edge hoặc Firefox.
+
+### Các bước thực hiện
+
+1. Tải repository về máy hoặc mở thư mục dự án trong Visual Studio Code.
+2. Kiểm tra cấu trúc thư mục và bảo đảm các tệp HTML, CSS và hình ảnh được đặt đúng vị trí.
+3. Mở tệp `index.html` bằng trình duyệt để xem giao diện website.
+
+Có thể sử dụng tiện ích Live Server trong Visual Studio Code để chạy và theo dõi các thay đổi trên trình duyệt.
+
+## 6. Cấu trúc thư mục
 
 ```text
 con-cung-ui-improvement/
 │
 ├── index.html
-│
 ├── css/
 │   └── style.css
 │
@@ -50,55 +89,54 @@ con-cung-ui-improvement/
 └── AI_USAGE.md
 ```
 
-## 5. Phạm vi giao diện thực hiện
-
-Dự án tập trung xây dựng khu vực danh sách sản phẩm với các thành phần chính:
-
-- Tiêu đề khu vực sản phẩm.
-- Danh sách gồm 4 sản phẩm.
-- Hình ảnh minh họa sản phẩm.
-- Tên và thông tin cơ bản của sản phẩm.
-- Giá bán sản phẩm.
-- Nút hoặc liên kết xem chi tiết sản phẩm (nếu được triển khai).
-
-## 6. Hướng dẫn chạy dự án
-
-1. Tải hoặc sao chép mã nguồn dự án về máy tính.
-2. Mở thư mục dự án bằng Visual Studio Code.
-3. Kiểm tra cấu trúc thư mục và bảo đảm các hình ảnh sản phẩm nằm trong thư mục `images`.
-4. Mở file `index.html`.
-5. Nhấn chuột phải và chọn **Open with Live Server** (nếu đã cài đặt tiện ích Live Server) để xem giao diện trên trình duyệt.
-
-Ngoài ra, có thể mở trực tiếp file `index.html` bằng trình duyệt web.
-
 ## 7. Kiểm thử giao diện
 
-Giao diện được kiểm tra trên các kích thước màn hình theo yêu cầu bài thực hành:
+Sau khi hoàn thiện, giao diện được kiểm tra trên trình duyệt nhằm phát hiện các vấn đề về bố cục, kích thước và khả năng hiển thị.
 
-| Kích thước | Thiết bị tham chiếu | Nội dung kiểm tra |
+### 7.1. Các kích thước màn hình kiểm thử
+
+| Kích thước | Thiết bị tham chiếu | Kết quả kiểm tra |
 |---|---|---|
-| 1366px | Máy tính | Bố cục và hiển thị danh sách sản phẩm |
-| 768px | Máy tính bảng | Khả năng điều chỉnh số cột và khoảng cách |
-| 390px | Điện thoại | Khả năng hiển thị nội dung trên màn hình nhỏ |
+| 1366px | Máy tính | [Bổ sung kết quả thực tế] |
+| 768px | Máy tính bảng | [Bổ sung kết quả thực tế] |
+| 390px | Điện thoại | [Bổ sung kết quả thực tế] |
 
-Các tiêu chí kiểm thử:
+### 7.2. Các vấn đề phát hiện và cách khắc phục
 
-- Trang web mở và hiển thị bình thường.
-- File CSS được liên kết và áp dụng chính xác.
-- Hình ảnh sản phẩm hiển thị đầy đủ.
-- Các thành phần không bị tràn khỏi màn hình.
-- Hiệu ứng hover và focus hoạt động phù hợp.
-- Bố cục có khả năng thích ứng với các kích thước màn hình khác nhau.
+| Vấn đề phát hiện | Nguyên nhân | Hướng khắc phục |
+|---|---|---|
+| [Ghi vấn đề thực tế 1] | [Nguyên nhân] | [Cách sửa] |
+| [Ghi vấn đề thực tế 2] | [Nguyên nhân] | [Cách sửa] |
+| [Ghi vấn đề thực tế 3] | [Nguyên nhân] | [Cách sửa] |
 
-**Kết quả kiểm thử:** Sẽ được cập nhật sau khi hoàn thành quá trình kiểm tra thực tế.
+### 7.3. Hình ảnh minh họa
 
-## 8. Tài liệu liên quan
+- **Giao diện trước khi cải tiến:** [Bổ sung ảnh hoặc đường dẫn ảnh]
+- **Giao diện sau khi cải tiến:** [Bổ sung ảnh hoặc đường dẫn ảnh]
 
-- Website tham khảo: https://concung.com/
-- Báo cáo sử dụng AI: [AI_USAGE.md](AI_USAGE.md)
+## 8. Sử dụng AI trong quá trình thực hiện
 
----
+AI được sử dụng như một công cụ hỗ trợ học tập trong quá trình phân tích mã nguồn, tìm hiểu cú pháp HTML5/CSS3 và đề xuất hướng cải thiện giao diện.
 
-**Học phần:** Phát triển ứng dụng  
-**Đề tài:** Cải tiến giao diện danh sách sản phẩm Con Cưng  
-**Công nghệ:** HTML5, CSS3
+Các nội dung có sử dụng AI bao gồm:
+
+- Hỗ trợ rà soát cấu trúc HTML và cách sử dụng các phần tử HTML5.
+- Giải thích cách hoạt động của CSS Selector và Box Model.
+- Hướng dẫn vận dụng Flexbox và CSS Grid.
+- Hỗ trợ tìm hiểu hiệu ứng hover, transition và responsive design.
+- Hỗ trợ phát hiện nguyên nhân của một số vấn đề hiển thị và đề xuất hướng khắc phục.
+
+Các nội dung do AI đề xuất không được áp dụng một cách máy móc. Mã nguồn được kiểm tra lại trên Visual Studio Code và trình duyệt; các phần chưa phù hợp được điều chỉnh để đáp ứng yêu cầu của bài tập và cấu trúc thực tế của dự án.
+
+Chi tiết các prompt đã sử dụng, kết quả nhận được và phần tự kiểm tra, điều chỉnh được trình bày trong tệp [`AI_USAGE.md`](AI_USAGE.md).
+
+## 9. Giới hạn của sản phẩm
+
+Đây là giao diện tĩnh được xây dựng nhằm thực hành HTML5 và CSS3. Các thành phần như tìm kiếm, lọc danh mục, sắp xếp sản phẩm và liên kết tham khảo hiện chưa được tích hợp chức năng xử lý dữ liệu thực tế.
+
+## 10. Thông tin repository
+
+- **Tên dự án:** Con Cưng UI Improvement
+- **Học phần:** Phát triển ứng dụng WEB/TMĐT
+- **Nội dung:** Bài tập cá nhân Buổi 2 – HTML & CSS
+- **GitHub Repository:** https://github.com/Hagiang546/con-cung-ui-improvement
